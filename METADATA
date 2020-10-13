@@ -1,7 +1,5 @@
 name: "ryu"
-description:
-    "Fast floating point to string conversion"
-
+description: "Fast floating point to string conversion"
 third_party {
   url {
     type: HOMEPAGE
@@ -12,7 +10,10 @@ third_party {
     value: "https://static.crates.io/crates/ryu/ryu-1.0.5.crate"
   }
   version: "1.0.5"
-  last_upgrade_date { year: 2020 month: 8 day: 21 }
   license_type: NOTICE
+  last_upgrade_date {
+    year: 2020
+    month: 8
+    day: 21
+  }
 }
-
