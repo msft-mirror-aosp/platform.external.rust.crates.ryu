@@ -10,4 +10,8 @@ rust_library {
         "--cfg integer128",
         "--cfg maybe_uninit",
     ],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
 }
