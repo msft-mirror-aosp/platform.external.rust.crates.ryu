@@ -1,0 +1,13 @@
+diff --git a/Android.bp b/Android.bp
+index bbb0114..e47c45a 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -10,4 +10,8 @@ rust_library {
+         "--cfg integer128",
+         "--cfg maybe_uninit",
+     ],
++    apex_available: [
++        "//apex_available:platform",
++        "com.android.virt",
++    ],
+ }
