@@ -2,12 +2,6 @@
 {
   "presubmit": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
       "name": "base64_device_test_tests_decode"
     },
     {
@@ -17,10 +11,34 @@
       "name": "base64_device_test_tests_helpers"
     },
     {
+      "name": "bitflags_device_test_src_lib"
+    },
+    {
+      "name": "bitflags_device_test_tests_basic"
+    },
+    {
       "name": "either_device_test_src_lib"
     },
     {
-      "name": "microdroid_manager_test"
+      "name": "rand_chacha_device_test_src_lib"
+    },
+    {
+      "name": "ryu_device_test_tests_common_test"
+    },
+    {
+      "name": "ryu_device_test_tests_d2s_table_test"
+    },
+    {
+      "name": "ryu_device_test_tests_d2s_test"
+    },
+    {
+      "name": "ryu_device_test_tests_f2s_test"
+    },
+    {
+      "name": "ryu_device_test_tests_s2d_test"
+    },
+    {
+      "name": "ryu_device_test_tests_s2f_test"
     },
     {
       "name": "unicode-xid_device_test_src_lib"
@@ -36,9 +54,6 @@
     },
     {
       "name": "url_device_test_tests_unit"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ]
 }
