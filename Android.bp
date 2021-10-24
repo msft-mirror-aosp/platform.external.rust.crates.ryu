@@ -43,6 +43,8 @@ rust_library {
     name: "libryu",
     host_supported: true,
     crate_name: "ryu",
+    cargo_env_compat: true,
+    cargo_pkg_version: "1.0.5",
     srcs: ["src/lib.rs"],
     edition: "2018",
     cfgs: [
@@ -53,4 +55,114 @@ rust_library {
         "//apex_available:platform",
         "com.android.virt",
     ],
+}
+
+rust_defaults {
+    name: "ryu_test_defaults",
+    crate_name: "ryu",
+    cargo_env_compat: true,
+    cargo_pkg_version: "1.0.5",
+    test_suites: ["general-tests"],
+    auto_gen_config: true,
+    edition: "2018",
+    cfgs: [
+        "integer128",
+        "maybe_uninit",
+    ],
+    rustlibs: [
+        "libnum_cpus",
+        "librand",
+        "librand_xorshift",
+        "libryu",
+    ],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_common_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/common_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_common_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/common_test.rs"],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_d2s_table_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/d2s_table_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_d2s_table_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/d2s_table_test.rs"],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_d2s_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/d2s_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_d2s_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/d2s_test.rs"],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_f2s_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/f2s_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_f2s_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/f2s_test.rs"],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_s2d_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/s2d_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_s2d_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/s2d_test.rs"],
+}
+
+rust_test_host {
+    name: "ryu_host_test_tests_s2f_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/s2f_test.rs"],
+    test_options: {
+        unit_test: true,
+    },
+}
+
+rust_test {
+    name: "ryu_device_test_tests_s2f_test",
+    defaults: ["ryu_test_defaults"],
+    srcs: ["tests/s2f_test.rs"],
 }
