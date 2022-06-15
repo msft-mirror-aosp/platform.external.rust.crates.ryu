@@ -26,38 +26,6 @@
       "path": "external/rust/crates/url"
     }
   ],
-  "postsubmit": [
-    {
-      "name": "ZipFuseTest"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "ryu_test_tests_common_test"
-    },
-    {
-      "name": "ryu_test_tests_d2s_table_test"
-    },
-    {
-      "name": "ryu_test_tests_d2s_test"
-    },
-    {
-      "name": "ryu_test_tests_f2s_test"
-    },
-    {
-      "name": "ryu_test_tests_s2d_test"
-    },
-    {
-      "name": "ryu_test_tests_s2f_test"
-    },
-    {
-      "name": "virtualizationservice_device_test"
-    }
-  ],
   "presubmit": [
     {
       "name": "ZipFuseTest"
