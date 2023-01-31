@@ -24,22 +24,25 @@
     },
     {
       "path": "external/rust/crates/url"
+    },
+    {
+      "path": "packages/modules/Virtualization/authfs"
+    },
+    {
+      "path": "packages/modules/Virtualization/microdroid_manager"
+    },
+    {
+      "path": "packages/modules/Virtualization/virtualizationmanager"
+    },
+    {
+      "path": "packages/modules/Virtualization/vm"
+    },
+    {
+      "path": "packages/modules/Virtualization/zipfuse"
     }
   ],
   "presubmit": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "libpvmfw_avb.integration_test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
       "name": "ryu_test_tests_common_test"
     },
     {
@@ -56,28 +59,10 @@
     },
     {
       "name": "ryu_test_tests_s2f_test"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
-    },
-    {
-      "name": "vm.test"
     }
   ],
   "presubmit-rust": [
     {
-      "name": "ZipFuseTest"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
-      "name": "libpvmfw_avb.integration_test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
       "name": "ryu_test_tests_common_test"
     },
     {
@@ -94,12 +79,6 @@
     },
     {
       "name": "ryu_test_tests_s2f_test"
-    },
-    {
-      "name": "virtualizationmanager_device_test"
-    },
-    {
-      "name": "vm.test"
     }
   ]
 }
