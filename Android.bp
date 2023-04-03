@@ -44,7 +44,7 @@ rust_library {
     host_supported: true,
     crate_name: "ryu",
     cargo_env_compat: true,
-    cargo_pkg_version: "1.0.12",
+    cargo_pkg_version: "1.0.13",
     srcs: ["src/lib.rs"],
     edition: "2018",
     apex_available: [
@@ -59,7 +59,7 @@ rust_defaults {
     name: "ryu_test_defaults",
     crate_name: "ryu",
     cargo_env_compat: true,
-    cargo_pkg_version: "1.0.12",
+    cargo_pkg_version: "1.0.13",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2018",
